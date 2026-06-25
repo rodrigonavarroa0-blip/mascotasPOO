@@ -15,10 +15,8 @@ public class tortuga extends Mascota {
         super(nombre, peso, vacunado);
         this.especie = especie;
         this.edad = edad;
-        
-        
-        
-}
+    }
+
     // =========================
     // SETTERS Y GETTERS
     // =========================
@@ -54,20 +52,5 @@ public class tortuga extends Mascota {
         }
         System.out.println("Especie: " + especie);
         System.out.println("Edad: " + edad + " años");
-
-}
-    
-    
-    public static void(String[] args) {
-        
-        // Crear un objeto de la clase tortuga
-        tortuga tortuga1 = new tortuga("Leonardo", 5, true, "Tortuga de tierra", 50);
-        
-        // Mostrar los datos de la tortuga
-        tortuga1.mostrarDatos();
-        
-        // Hacer que la tortuga coma y duerma
-        tortuga1.comer();
-        tortuga1.dormir();
     }
 }
