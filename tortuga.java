@@ -14,11 +14,10 @@ public class tortuga extends Mascota {
     public tortuga(String nombre, int peso, boolean vacunado, String especie, int edad) {
         super(nombre, peso, vacunado);
         this.especie = especie;
-        this.edad = edad;  
-       
+        this.edad = edad;
         
-
-    
+        
+        
 }
     // =========================
     // SETTERS Y GETTERS
@@ -55,11 +54,11 @@ public class tortuga extends Mascota {
         }
         System.out.println("Especie: " + especie);
         System.out.println("Edad: " + edad + " años");
-  
+
 }
     
     
-    public static void main(String[] args) {
+    public static void(String[] args) {
         
         // Crear un objeto de la clase tortuga
         tortuga tortuga1 = new tortuga("Leonardo", 5, true, "Tortuga de tierra", 50);

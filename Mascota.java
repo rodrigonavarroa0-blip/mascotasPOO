@@ -1,5 +1,7 @@
+import java.util.Scanner;
+
 public class Mascota {
- 
+
     protected String nombre;
     protected int peso;
     protected boolean vacunado;
@@ -54,13 +56,34 @@ public class Mascota {
         } else {
             System.out.println(nombre + " no está vacunado");
         }
-    } public void comer() {
+    }
 
+    public void comer() {
         System.out.println("Niam niam");
     }
 
     public void dormir() {
-
         System.out.println("Z Z Z Z...");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Crear una mascota");
+        System.out.print("Nombre: ");
+        String nombre = sc.nextLine();
+
+        System.out.print("Peso (kg): ");
+        int peso = sc.nextInt();
+
+        System.out.print("¿Vacunado? (1 = sí, 0 = no): ");
+        boolean vacunado = sc.nextInt() == 1;
+
+        Mascota mascota = new Mascota(nombre, peso, vacunado);
+        mascota.mostrarDatos();
+        mascota.comer();
+        mascota.dormir();
+
+        sc.close();
     }
 }
